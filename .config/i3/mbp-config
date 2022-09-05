@@ -204,11 +204,11 @@ bar {
 for_window [class=".*"] border pixel 2
 
 
-gaps inner 15
-gaps outer -2
+gaps inner 5
+gaps outer 0
 
 exec_always nitrogen --restore
-exec_always ~/.i3-xrandr.sh
+exec_always xrandr --output Virtual-1 --mode 2560x1600 --rate 59.99
 exec_always picom
 exec_always conky
 exec xrdb -merge ~/.Xresources
